@@ -9,8 +9,8 @@ const app = express()
 
 
 /*Puerto de Escucha*/
-app.listen(3000, () =>
-  console.log("¡Aplicación de prueba Front escuchando en el puerto 3000!")
+app.listen(3001, () =>
+  console.log("¡Aplicación de prueba Front escuchando en el puerto 3001!")
 );
 
 /*Ruta de la API*/
