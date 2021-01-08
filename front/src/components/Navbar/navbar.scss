@@ -1,0 +1,17 @@
+@import "../../styles/common";
+
+.navSearch{
+    background-color: $color-base;
+}
+
+.butonSearch{
+    background-color: $color-fondo;
+    border-color: $color-fondo;
+    border: none;
+    width: 3em;
+    border-radius: 0 0.2em 0.2em  0;
+}
+
+.inputSearch{
+    border: none !important;
+}
