@@ -5,16 +5,15 @@ import lupita from '../../images/ic_Search.png';
 import './navbar.scss'
 
 
-
-
+/*Genera la barra de busqueda*/
 const Search = () => {
   return (
     <div>
         <nav className="navbar navSearch">
                 <div className="container-fluid d-flex justify-content-lg-center">
                     <img src={logoMeli} className="navbar-brand" alt='mercadolibreLogo'/>
-                    <form className="d-flex col-md-8">
-                        <input className="form-control inputSearch rounded-0" type="search" placeholder="Nunca dejes de buscar" aria-label="Search" />
+                    <form className="d-flex col-md-9">
+                        <input className="form-control inputSearch rounded-0" type="text" placeholder="Nunca dejes de buscar" aria-label="Search" />
                         <button className="butonSearch" type="submit">
                           <img src={lupita} className="img-fluid" alt='buscar'/>
                         </button>

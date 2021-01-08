@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Search from './components/Navbar/navbar';
+import Template from './components/Template/template';
 
 function App() {
   return (
     <div className="App">
-        <Search></Search>
+        <Template></Template>
     </div>
   );
 }
