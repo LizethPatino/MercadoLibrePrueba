@@ -1,0 +1,18 @@
+@import "../../Styles/common";
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important; 
+    font-weight: bold;
+    color: $color-inputl !important;
+    font-size: 1em;
+  }
+
+.breadcrumb{
+    font-weight: 500;
+    font-size: $fuente-breadcrumbs;
+    color: $color-inputl;
+} 
+
+.active{
+    font-weight: bold;
+}
