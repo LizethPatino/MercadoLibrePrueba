@@ -38,7 +38,7 @@ const SpecificProduct = (props) => {
   return (
     <div className="container">
          <Breadcrumbs categories={appState.categories} itemSearch={props.match.params.id}></Breadcrumbs>
-            <div className="jumbotron">
+            <div id="jumbotron" className="jumbotron">
                 <div key={appState.itemEspecifico.id}>
                     <div  className="d-flex flex-md-row flex-wrap">
                         <div className="mr-auto col-md-9 imageReference"> 
@@ -50,7 +50,6 @@ const SpecificProduct = (props) => {
                         </div>
                     <div className="informationProduct col-md-3 mr-auto">   
                     {appState.itemEspecifico.condition==='new'?<p className="quantityProduct">Nuevo - {appState.itemEspecifico.sold_quantity} Vendidos </p>:<p className="quantityProduct">Usado - {appState.itemEspecifico.sold_quantity} Vendidos </p>}
-
                     <p className="nameProductSpecific">{appState.itemEspecifico.title}</p>
                     <p className="priceProduct">$ {appState?.price?.amount}</p>
                     <button className="btn buttonProperties col-md-12">Comprar</button>
