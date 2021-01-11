@@ -11,33 +11,32 @@ const Search = () => {
 
   /*Estado inicial*/
   const [item, setData] = useState('');
-
-  const routerH = useHistory()
+  const routerH = useHistory();
   const searchLink = `/items?search=${item}`;
+
   
 
  /* enviar item de busqueda */
   const sentData = (event) => {
-    event.preventDefault()
-    console.log('enviando datos...' + item)
-    routerH.push(searchLink)
+    event.preventDefault();
+     routerH.push(searchLink);
 }
 
   
   return (
     /*Genera la barra de busqueda*/
     <div>
-        <nav className="navbar navSearch">
+        <nav aria-label="Search service" className="navbar navSearch">
                 <div className="container-fluid d-flex justify-content-lg-center">
                   <Link to={{ pathname: '/'}}>
-                      <img src={logoMeli} className="navbar-brand" alt='mercadolibreLogo'/>
+                      <img src={logoMeli} className="navbar-brand" alt="Mercado Libre Logotype"/>
                   </Link>
                     <form className="d-flex col-md-9" onSubmit={sentData}>
-                        <input className="form-control inputSearch rounded-0" type="text" placeholder="Nunca dejes de buscar"
-                        aria-label="Search" onChange={e => setData(e.target.value)} value={item} />
-                        <button className="butonSearch" type="submit">
-                          <img src={lupita} alt='buscar'/>
-                        </button>
+                        <input className="form-control rounded-0 border-0" type="text" placeholder="Nunca dejes de buscar"
+                          aria-label="Search" onChange={e => setData(e.target.value)} value={item} required/>
+                          <button className="butonSearch" type="submit">
+                            <img src={lupita} alt='Search icon' aria-label="button search"/>
+                          </button>
                     </form>
                 </div>
         </nav>
