@@ -1,0 +1,29 @@
+@import "../../Styles/common";
+
+.jumbotron{
+    background-color: #ffffff!important;
+    padding: 1em!important;
+    margin-bottom: 0;
+}
+
+.img-fluid{
+    border: none !important;
+    border-radius: 0.25em!important;
+    //max-width: 100%;
+    height: 11.25em !important;
+}
+
+.price{
+    font-size: $fuente-precio;
+    font-weight:500;
+}
+
+.productName{
+    margin-top: $espacio-breadcrumbs + $espacio-breadcrumbs;
+    font-size: $fuente-lista-producto; 
+}
+
+.cityName{
+    font-size: $fuente-ubicacion; 
+}
+

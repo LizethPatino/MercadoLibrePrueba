@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import logoMeli from '../../Images/Logo_ML.png';
 import {URL_API} from '../../Constants/UrlApi';
 import lupita from '../../Images/ic_Search.png';
-import './navbar.scss'
+import './navbar.scss';
 import { Link, useHistory } from "react-router-dom";
 
 
@@ -35,7 +35,7 @@ const Search = () => {
                         <input className="form-control inputSearch rounded-0" type="text" placeholder="Nunca dejes de buscar"
                         aria-label="Search" onChange={e => setData(e.target.value)} value={item} />
                         <button className="butonSearch" type="submit">
-                          <img src={lupita} className="img-fluid" alt='buscar'/>
+                          <img src={lupita} alt='buscar'/>
                         </button>
                     </form>
                 </div>
