@@ -28,10 +28,10 @@ const Search = () => {
     <div>
         <nav aria-label="Search service" className="navbar navSearch">
                 <div className="container-fluid d-flex justify-content-lg-center">
-                  <Link to={{ pathname: '/'}}>
-                      <img src={logoMeli} className="navbar-brand" alt="Mercado Libre Logotype"/>
-                  </Link>
                     <form className="d-flex col-md-9" onSubmit={sentData}>
+                        <Link to={{ pathname: '/'}}>
+                            <img src={logoMeli} className="navbar-brand" alt="Mercado Libre Logotype"/>
+                        </Link>
                         <input className="form-control rounded-0 border-0" type="text" placeholder="Nunca dejes de buscar"
                           aria-label="Search" onChange={e => setData(e.target.value)} value={item} required/>
                           <button className="butonSearch" type="submit">
