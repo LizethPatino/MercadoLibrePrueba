@@ -40,15 +40,15 @@ const SpecificProduct = (props) => {
          <Breadcrumbs categories={appState.categories} itemSearch={props.match.params.id}></Breadcrumbs>
             <div className="jumbotron">
                 <div key={appState.itemEspecifico.id}>
-                    <div  className="d-flex bd-highlight">
-                        <div className="p-2 col-md-9 bd-highlight"> 
+                    <div  className="d-flex flex-md-row flex-wrap">
+                        <div className="mr-auto col-md-9 imageReference"> 
                             <img src={appState.itemEspecifico.picture} className="img-fluid imagenOfficialSize" alt={appState.itemEspecifico.title}/>
                             <div className="descriptionArea">
                             <h2 className="productTitleSpecific">Descripción del producto</h2>
                             <p className="text-justify productDescription">{appState.itemEspecifico.description}</p>
                             </div>   
                         </div>
-                    <div className="informationProduct col-md-3 bd-highlight">   
+                    <div className="informationProduct col-md-3 mr-auto">   
                     {appState.itemEspecifico.condition==='new'?<p className="quantityProduct">Nuevo - {appState.itemEspecifico.sold_quantity} Vendidos </p>:<p className="quantityProduct">Usado - {appState.itemEspecifico.sold_quantity} Vendidos </p>}
 
                     <p className="nameProductSpecific">{appState.itemEspecifico.title}</p>

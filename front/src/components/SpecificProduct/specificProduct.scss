@@ -1,5 +1,10 @@
 @import "../../Styles/common";
 
+.padre{
+    display: flex!important;
+    flex-direction: row!important;
+}
+
 .img-fluid{
     border: none !important;
     border-radius: 0.25em!important;
@@ -31,8 +36,9 @@
 }
 
 .informationProduct{
-    padding:$espacio-breadcrumbs+$espacio-breadcrumbs;
-    padding-right:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    padding-right:$espacio-breadcrumbs+$espacio-breadcrumbs!important;
+    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    padding-left:$espacio-padding+$espacio-padding!important;
 }
 
 .quantityProduct{
@@ -43,12 +49,16 @@
 }
 
 .nameProductSpecific{
-    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    padding-bottom:$espacio-breadcrumbs;
     font-weight: 500;
     font-size: $fuente-precio;
 }
 
 .priceProduct{
-    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    padding-bottom:$espacio-breadcrumbs;
     font-size: $fuente-precio-especifico;
+}
+
+.imageReference{
+    padding-top:$espacio-breadcrumbs+$espacio-breadcrumbs ;
 }
