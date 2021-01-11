@@ -3,7 +3,7 @@ const request = require('request')
 const express = require('express')
 const router = express.Router()
 const constantes = require('../Utils/constantes');
-cate=[];
+
 
 /*Método encargado de realizar el consumo del servicio de la api de mercado libre para buscar productos*/
 router.get('/items', (req, res) => {
@@ -85,15 +85,15 @@ router.get('/items/:id', (req, res) => {
     const URLDESCRIPCION=`${constantes.URLAPI}/items/${req.params.id}/description`;
     let data1, data2, data3;
     llamarApi(URL)
-    .then( result => {    // Result of first call
+    .then( result => {   
         data1 = result;
         const URLCATEGORIA=`${constantes.URLAPI}/categories/${data1.category_id}`;
         return llamarApi(URLCATEGORIA);
-    })  .then( result => {    // Result of second call
+    })  .then( result => {   
         data2 = result;
         return llamarApi(URLDESCRIPCION);
     }) 
-    .then( result => {     // Result of third call
+    .then( result => {   
         data3 = result;
         var categoriaFinal=data2.path_from_root.map((category) => {return category.name})
         res.send(crearJsonEspecifico(data1,data3.plain_text,categoriaFinal)); 

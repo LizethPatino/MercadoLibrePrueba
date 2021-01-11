@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import Breadcrumbs from "../Breadcrumbs/breadcrumbs";
 import {URL_API} from '../../Constants/UrlApi';
 import './specificProduct.scss';
+import { Helmet } from "react-helmet";
+
 
 const SpecificProduct = (props) => {
 
@@ -16,25 +18,29 @@ const SpecificProduct = (props) => {
     price:null
   });
   
- /* LLamado a la API */ 
- const callApi =  () => {
-   fetch(apiUrl).then((res) => res.json())
-      .then((item) => {
-        setAppState({ 
-          loading: false,
-          categories: item.categories,
-          itemEspecifico: item.item,
-          price:item.item.price});
-      });
-    };
-  
+ /* LLamado a la API */  
   useEffect(() => {
+    const callApi =  () => {
+      fetch(apiUrl).then((res) => res.json())
+         .then((item) => {
+           setAppState({ 
+             loading: false,
+             categories: item.categories,
+             itemEspecifico: item.item,
+             price:item.item.price});
+         });
+       };
     callApi();
   }, [apiUrl]);
+
 
   /* se pinta la vista de producto especifico*/
   return (
     <div className="container">
+      <Helmet>
+            <title>Generalidades de un producto</title>
+            <meta name="description" content="La comunidad de compra y venta online más grande de América Latina." />
+      </Helmet>
          <Breadcrumbs categories={appState.categories} itemSearch={props.match.params.id}></Breadcrumbs>
             <div id="jumbotron" className="jumbotron">
                 <div key={appState.itemEspecifico.id}>

@@ -4,7 +4,7 @@ import logoMeli from '../../Images/Logo_ML.png';
 import lupita from '../../Images/ic_Search.png';
 import './navbar.scss';
 import { Link, useHistory } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 
 
 const Search = () => {
@@ -26,6 +26,10 @@ const Search = () => {
   return (
     /*Genera la barra de busqueda*/
     <div>
+      <Helmet>
+            <title>Bienvenidos a Mercado Libre</title>
+            <meta name="description" content="La comunidad de compra y venta online más grande de América Latina." />
+      </Helmet>
         <nav aria-label="Search service" className="navbar navSearch">
                 <div className="container-fluid d-flex justify-content-lg-center">
                     <form className="d-flex col-md-9" onSubmit={sentData}>

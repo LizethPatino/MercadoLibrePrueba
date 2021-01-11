@@ -1,0 +1,18 @@
+@import "../../Styles/common";
+
+#jumbotronNotFound{
+    background-color: #ffffff;
+    padding: 4em;
+    margin-bottom: 0;
+}
+
+.resultsNotFound{
+    color:$color-inputl;
+    font-size: $fuente-descripcion-producto;
+}
+
+
+.SearchIcon{
+    font-size: 4em;
+    color:$color-inputl;
+  }
