@@ -1,7 +1,7 @@
 import Search from './Components/Navbar/navbar';
 import { Route ,BrowserRouter, Switch } from "react-router-dom";
 import ListItems from './Components/ResultListItems/resultListItems';
-import './App.css';
+import './App.scss';
 import SpecificProduct from './Components/SpecificProduct/specificProduct';
 
 function App() {
