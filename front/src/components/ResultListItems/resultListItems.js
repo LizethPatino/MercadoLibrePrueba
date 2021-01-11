@@ -4,7 +4,7 @@ import './resultListItems.scss';
 import envio from '../../Images/ic_shipping.png';
 import {URL_API} from '../../Constants/UrlApi';
 import querySearch from "stringquery";
-import { Link, useHistory } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 

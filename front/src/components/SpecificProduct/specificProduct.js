@@ -1,14 +1,12 @@
 import React, {useState, useEffect} from "react";
 import Breadcrumbs from "../Breadcrumbs/breadcrumbs";
-import logoMeli from '../../Images/Logo_ML.png';
-import lupita from '../../Images/ic_Search.png';
-import { Link, useHistory } from "react-router-dom";
 import {URL_API} from '../../Constants/UrlApi';
 import querySearch from "stringquery";
+import './specificProduct.scss';
 
 const SpecificProduct = (props) => {
 
-    var query = querySearch(props.match.params.id);
+    /* costantes definidas */
     const apiUrl = `${URL_API}/${props.match.params.id}`;
 
    /*Estado inicial*/
@@ -44,18 +42,20 @@ const SpecificProduct = (props) => {
                 <div key={appState.itemEspecifico.id}>
                     <div  className="d-flex bd-highlight">
                         <div className="p-2 col-md-9 bd-highlight"> 
-                            <img src={appState.itemEspecifico.picture} className="img-fluid" alt={appState.itemEspecifico.title}/>
-                            <h2>Descripción del producto</h2>
-                            <p>{appState.itemEspecifico.description}</p>
+                            <img src={appState.itemEspecifico.picture} className="img-fluid imagenOfficialSize" alt={appState.itemEspecifico.title}/>
+                            <div className="descriptionArea">
+                            <h2 className="productTitleSpecific">Descripción del producto</h2>
+                            <p className="text-justify productDescription">{appState.itemEspecifico.description}</p>
+                            </div>   
+                        </div>
+                    <div className="informationProduct col-md-3 bd-highlight">   
+                    {appState.itemEspecifico.condition==='new'?<p className="quantityProduct">Nuevo - {appState.itemEspecifico.sold_quantity} Vendidos </p>:<p className="quantityProduct">Usado - {appState.itemEspecifico.sold_quantity} Vendidos </p>}
+
+                    <p className="nameProductSpecific">{appState.itemEspecifico.title}</p>
+                    <p className="priceProduct">$ {appState?.price?.amount}</p>
+                    <button className="btn buttonProperties col-md-12">Comprar</button>
                     </div>
-                    <div className="p-2 mt-3 col-md-3 bd-highlight">   
-                    {appState.itemEspecifico.condition==='new'?<p className="productName">Nuevo - {appState.itemEspecifico.sold_quantity} Vendidos </p>:<p className="productName">Usado - {appState.itemEspecifico.sold_quantity} Vendidos </p>}
-                    
-                    <p className="productName">{appState.itemEspecifico.title}</p>
-                    <p className="productName">$ {appState?.price?.amount}</p>
-                    <button className="btn btn-info">Comprar</button>
                     </div>
-                    </div>  
                 </div> 
         </div>     
 </div>

@@ -1,4 +1,54 @@
+@import "../../Styles/common";
+
 .img-fluid{
     border: none !important;
     border-radius: 0.25em!important;
+}
+
+.imagenOfficialSize{
+    width: $tamanio-imagen;
+}
+
+.productTitleSpecific{
+    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    color:$color-texto;
+    font-size: $fuente-descripcion-producto;
+}
+
+.descriptionArea{
+    padding:$espacio-breadcrumbs+$espacio-breadcrumbs;
+}
+
+.productDescription{
+    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    color: $color-inputl !important;
+    font-weight: 400;
+}
+
+.buttonProperties{
+    background-color: $color-boton!important;
+    color:$color-letra-boton!important;
+}
+
+.informationProduct{
+    padding:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    padding-right:$espacio-breadcrumbs+$espacio-breadcrumbs;
+}
+
+.quantityProduct{
+    padding-top:$espacio-breadcrumbs+$espacio-breadcrumbs ;
+    padding-bottom: $espacio-breadcrumbs;
+    font-size:$fuente-breadcrumbs;
+    font-weight: 500;
+}
+
+.nameProductSpecific{
+    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    font-weight: 500;
+    font-size: $fuente-precio;
+}
+
+.priceProduct{
+    padding-bottom:$espacio-breadcrumbs+$espacio-breadcrumbs;
+    font-size: $fuente-precio-especifico;
 }

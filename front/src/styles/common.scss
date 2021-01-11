@@ -6,6 +6,7 @@ $color-inputl:#999999;
 $color-texto: #333333;
 $color-boton:#3483FA;
 $color-resaltado:#666666;
+$color-letra-boton:#ffffff;
 
 /* Tipografia */
 
@@ -13,8 +14,12 @@ $fuente: 'Proxima Nova','Helvetica Neue', Helvetica,
   Arial, sans-serif;
 
   /* Tamaño Fuentes y espacios */
+$tamanio-imagen:42.5em;  
 $fuente-precio:1.5em;
 $fuente-lista-producto:1.125em;
 $espacio-breadcrumbs:1em;
 $fuente-breadcrumbs:0.875em;
 $fuente-ubicacion:0.75em;
+$fuente-precio-especifico:2.875em;
+$fuente-descripcion-producto:1.75em;
+
