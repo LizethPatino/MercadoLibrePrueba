@@ -46,7 +46,7 @@ return(
                          <Link className='text-body text-decoration-none'  to={{ pathname: `/items/${item.id}`}}>
                         <div  className="d-flex bd-highlight">
                             <div className="p-2 col-md-2 bd-highlight"> 
-                                <img src={item.picture} className="img-fluid" alt={item.title}/>
+                                <img src={item.picture} className="img-fluidd" alt={item.title}/>
                         </div>
                         <div className="p-2 mt-3 col-md-6 bd-highlight">
                              <span className="price">$ {item.price.amount}</span>

@@ -15,7 +15,8 @@ const SpecificProduct = (props) => {
    const [appState, setAppState] = useState({
     loading: false,
     categories: [],
-    item: [],
+    itemEspecifico: [],
+    price:null
   });
   
  /* LLamado a la API */ 
@@ -26,7 +27,8 @@ const SpecificProduct = (props) => {
         setAppState({ 
           loading: false,
           categories: item.categories,
-          item: item.item});
+          itemEspecifico: item.item,
+          price:item.item.price});
       });
     };
   
@@ -38,22 +40,21 @@ const SpecificProduct = (props) => {
   return (
     <div className="container">
             <div className="jumbotron">
-                <div key={appState.item.id}>
+                <div key={appState.itemEspecifico.id}>
                     <div  className="d-flex bd-highlight">
-                        <div className="p-2 col-md-8 bd-highlight"> 
-                            <img src={appState.item.picture} className="img-fluid" alt={appState.item.title}/>
+                        <div className="p-2 col-md-9 bd-highlight"> 
+                            <img src={appState.itemEspecifico.picture} className="img-fluid" alt={appState.itemEspecifico.title}/>
+                            <h2>Descripción del producto</h2>
+                            <p>{appState.itemEspecifico.description}</p>
                     </div>
-                    <div className="p-2 mt-3 col-md-4 bd-highlight">
-                     
-                         
-                         <p className="productName">{appState.item.title}</p>
-                    </div>
-                    <div className="p-2 flex-grow-1">
-                        <p className="cityName d-flex justify-content-center mt-4">{appState.item.address}</p>
+                    <div className="p-2 mt-3 col-md-3 bd-highlight">   
+                    {appState.itemEspecifico.condition==='new'?<p className="productName">Nuevo - {appState.itemEspecifico.sold_quantity} Vendidos </p>:<p className="productName">Usado - {appState.itemEspecifico.sold_quantity} Vendidos </p>}
+                    
+                    <p className="productName">{appState.itemEspecifico.title}</p>
+                    <p className="productName">$ {appState?.price?.amount}</p>
+                    <button className="btn btn-info">Comprar</button>
                     </div>
                     </div>  
-
-                    <hr />
                 </div> 
         </div>     
 </div>
