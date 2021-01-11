@@ -1,20 +1,25 @@
 @import "../../Styles/common";
 
-.breadcrumb-item + .breadcrumb-item::before {
-    content: ">" !important; 
-    font-weight: bold;
-    color: $color-inputl !important;
-    font-size: 1em;
-  }
 
-.breadcrumb{
+@mixin breadcrumb{
     font-weight: 500;
-    font-size: $fuente-breadcrumbs;
     color: $color-inputl;
-    padding: 1em 0em 1em!important;
-    background-color: transparent !important;
-} 
+    }
+
+#breadcrumSpecific + #breadcrumSpecific::before{
+    content: ">";
+    font-size: 1em;
+    @include breadcrumb;  
+    }
+
+#itemBreadcrum{
+    font-size: $fuente-breadcrumbs;
+    padding: 1em 0em 1em;
+    background-color: transparent;
+    @include breadcrumb;
+}
 
 .active{
-    font-weight: bold;
+    @include breadcrumb;
 }
+

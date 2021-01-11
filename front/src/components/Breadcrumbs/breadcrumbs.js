@@ -7,14 +7,14 @@ const Breadcrumbs = (props) => {
 return(
     <nav aria-label="breadcrumb">
         {props.categories.length ? (
-            <ol className="breadcrumb">   
+            <ol id="itemBreadcrum" className="breadcrumb">   
               {props.categories.map((category, index) => (
-                    <li key={index} className="breadcrumb-item">{category}</li>    
+                    <li key={index} id="breadcrumSpecific" className="breadcrumb-item">{category}</li>    
               ))}
             </ol>
-        ) : <ol className="breadcrumb">
-                <li className="breadcrumb-item">Inicio</li>
-                <li className="breadcrumb-item active text-capitalize" aria-current="page">{props.itemSearch}</li>
+        ) : <ol id="itemBreadcrum" className="breadcrumb">
+                <li  id="breadcrumSpecific" className="breadcrumb-item">Inicio</li>
+                <li  id="breadcrumSpecific" className="breadcrumb-item active text-capitalize" aria-current="page">{props.itemSearch}</li>
             </ol> }   
     </nav>
 );
