@@ -16,14 +16,18 @@
 .price{
     font-size: $fuente-precio;
     font-weight:500;
+    color:$color-texto;
 }
 
 .productName{
     margin-top: $espacio-breadcrumbs + $espacio-breadcrumbs;
     font-size: $fuente-lista-producto; 
+    color:$color-texto;
 }
 
 .cityName{
     font-size: $fuente-ubicacion; 
+    color:$color-inputl;
+    font-weight: 500;
 }
 

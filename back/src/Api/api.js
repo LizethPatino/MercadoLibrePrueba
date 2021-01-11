@@ -130,7 +130,7 @@ function crearJsonEspecifico(item,descripcion,categoria,res){
                 amount: Math.floor(item.price),
                 decimals: +(item.price%1).toFixed(2).substring(2)
             },
-            picture: item.thumbnail,
+            picture: item.pictures.length ? item.pictures[0].url : "",
             condition: item.condition,
             free_shipping: item.shipping.free_shipping,
             sold_quantity:item.sold_quantity,

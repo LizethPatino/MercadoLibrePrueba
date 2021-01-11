@@ -14,7 +14,7 @@ return(
             </ol>
         ) : <ol className="breadcrumb">
                 <li className="breadcrumb-item">Inicio</li>
-                <li className="breadcrumb-item active" aria-current="page">{props.itemSearch}</li>
+                <li className="breadcrumb-item active text-capitalize" aria-current="page">{props.itemSearch}</li>
             </ol> }   
     </nav>
 );
