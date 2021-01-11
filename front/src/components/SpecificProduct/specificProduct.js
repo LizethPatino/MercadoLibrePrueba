@@ -39,6 +39,7 @@ const SpecificProduct = (props) => {
   
   return (
     <div className="container">
+         <Breadcrumbs categories={appState.categories} itemSearch={props.match.params.id}></Breadcrumbs>
             <div className="jumbotron">
                 <div key={appState.itemEspecifico.id}>
                     <div  className="d-flex bd-highlight">
