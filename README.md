@@ -36,7 +36,9 @@ Respecto al front, se debe ir a la carpeta front del proyecto, estando alli se e
 
 ## Desiciones de Diseño 📖
 
-
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
 
 
 
