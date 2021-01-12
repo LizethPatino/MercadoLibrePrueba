@@ -34,7 +34,7 @@ Respecto al front, se debe ir a la carpeta front del proyecto, estando alli se e
 
 ```
 
-## Desiciones de Diseño 📖
+## Decisiones de Diseño 📖
 
 1. Se determino el uso del preprocesador de css (sass), ya que favorece el mantenimiento, reutilización y la organización de las hojas de estilo.
 2. Se usan hojas de estilo especificas para cada componente, con el fin de facilitar el mantenimiento y entendimiento de la aplicación.
