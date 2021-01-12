@@ -21,12 +21,16 @@ _Que cosas necesitas para instalar el software_
 
 ### Instalación 🔧
 
-_En este proyecto se encuentra desacoplado el back y el front, la razón por la cual se realiza, es permitir a futuro si es necesario la integración de otras tecnologias para back o front o el consumo de tecnologias y/o servicios de terceros._
+_En este proyecto se encuentra desacoplado el back y el front, la razón por la cual se realiza, es permitir a futuro si es necesario la integración de otras tecnologias para back o front o el consumo de tecnologias y/o servicios de terceros; Esto ayuda a favorecer el desacoplamiento de la aplicación._
 
-_Dí cómo será ese paso_
+
 
 ```
-Da un ejemplo
+Pasos para realizar la instalación y compilación de la aplicación:
+
+_Debes clonar el repositorio aqui presente y luego en la ubicación que desees de tu equipo_
+
+_Debes clonar el repositorio aqui presente y luego en la ubicación que desees de tu equipo_
 ```
 
 _Y repite_
