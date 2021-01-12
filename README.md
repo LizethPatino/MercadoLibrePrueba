@@ -3,7 +3,7 @@
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán realizar el montaje de esta aplicación en tu equipo:
+Estas instrucciones te permitirán realizar el montaje de esta aplicación en tu equipo:
 
 
 ### Pre-requisitos 📋
