@@ -39,7 +39,7 @@ return(
      <Helmet>
             <title>Resultados de búsqueda</title>
             <meta name="description" content="La comunidad de compra y venta online más grande de América Latina." />
-        </Helmet>
+      </Helmet>
     {
       appState.items.length>1 ?
       <section>
