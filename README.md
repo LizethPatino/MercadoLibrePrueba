@@ -36,10 +36,13 @@ Respecto al front, se debe ir a la carpeta front del proyecto, estando alli se e
 
 ## Desiciones de Diseño 📖
 
-1. James Madison
-2. James Monroe
-3. John Quincy Adams
-
+1. Se determino el uso del preprocesador de css (sass), ya que favorece el mantenimiento, reutilización y la organización de las hojas de estilo.
+2. Se usan hojas de estilo especificas para cada componente, con el fin de facilitar el mantenimiento y entendimiento de la aplicación.
+3. Se hace uso de Bootstrap, debido a su amplio gabinete de opciones frente a los elementos esenciales para la creación de una aplicación y a su vez favorecer la visualización en otros dispositivos a los cuales pueda acceder el usuario final (responsive), lo cual es un hito importante a la hora de hablar de usabilidad.
+4. Se utiliza el conjunto de atributos aria para cumplir con las especificaciones de la w3c, lo cual habla directamente de la accesibilidad, con el fin de generar una aplicación al alcance de diferentes tipos de usuario.
+5. Se determino el uso de la unidad de medida em, ya que al ser dinamica permite la adaptación del contenido según el dispositivo.
+6. Se uso react-helmet con el fin de mejorar el seo de la aplicación, a través de etiquetas meta, con contenido enriquecido.
+7. Se decidio estructurar la aplicación en división de componentes funcionales, con el fin de facilitar el mantenimiento y teniendo presente uno de los pilares de solid, el cual es la responsabilidad unica por componente.
 
 
 
