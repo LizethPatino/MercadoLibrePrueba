@@ -13,9 +13,9 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 _Que cosas necesitas para instalar el software_
 
 ```
--Node js >= 6
--Git >= 6
--Npm = 6.14.9
+* Node js >= 6
+* Git >= 6
+* Npm = 6.14.9
 
 ```
 
@@ -28,16 +28,14 @@ _En este proyecto se encuentra desacoplado el back y el front, la razón por la 
 ```
 Pasos para realizar la instalación y compilación de la aplicación:
 
-_Debes clonar el repositorio aqui presente y luego en la ubicación que desees de tu equipo_
+Debes clonar el repositorio aqui presente y luego en la ubicación que desees de tu equipo
 
-_Debes clonar el repositorio aqui presente y luego en la ubicación que desees de tu equipo_
+Luego ir a la carpeta back y estando alli realizar en consola el comando npm install, finalmente ejecutar el comando npm start.
+
+Respecto al front, se debe ir a la carpeta front del proyecto, estando alli se ejecuta el comando npm install y finalmente npm start.
+
 ```
 
-_Y repite_
-
-```
-hasta finalizar
-```
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
